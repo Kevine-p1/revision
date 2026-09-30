@@ -8,7 +8,9 @@ function greetUser(name){
 
 }
 greetUser("KAYLA");
+greetUser("Kendal");
 greetUser("Keona");
+
 
 function calculateArea(w,h){
     return w*h;
@@ -38,3 +40,12 @@ const result=checkAge(20);
  
 
 console.log(result);
+
+
+function calculateDiscount(price, discountPercent){
+ const discountedAmount= price* (discountPercent/100);
+ return price - discountedAmount;
+}
+
+const finalPrice= calculateDiscount(1000, 20);
+console.log(finalPrice);
