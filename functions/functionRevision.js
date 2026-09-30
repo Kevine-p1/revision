@@ -49,3 +49,28 @@ function calculateDiscount(price, discountPercent){
 
 const finalPrice= calculateDiscount(1000, 20);
 console.log(finalPrice);
+
+
+function getGrade(score){
+     let grade;
+    if (score>=90){
+        grade= "A";
+    }
+    else if(score>=80){
+        grade= "B";
+    }
+    else if(score>=70){
+        grade="C";
+    }
+    else if(score>=60){
+        grade="D";
+    }
+    else{
+        grade="F";
+    }
+return grade;
+}
+
+console.log(getGrade(80));
+console.log(getGrade(90));
+console.log(getGrade(50));
