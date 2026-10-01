@@ -74,3 +74,29 @@ return grade;
 console.log(getGrade(80));
 console.log(getGrade(90));
 console.log(getGrade(50));
+
+
+function getFullName(firstName,lastName){
+    return firstName + lastName;
+}
+
+console.log("Mbabazi " + "Aime");
+
+
+
+function calculateShipping(weight){
+    let cost;
+    if(weight<=2){
+        cost= 2000;
+    }
+    else if(weight<=5){
+        cost=4000;
+    }
+    else{
+        cost=7000;
+    }
+    return cost;
+}
+
+const finalCost= calculateShipping(8);
+console.log(finalCost);
