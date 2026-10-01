@@ -52,23 +52,23 @@ console.log(finalPrice);
 
 
 function getGrade(score){
-     let grade;
+     
     if (score>=90){
-        grade= "A";
+       return "A";
     }
     else if(score>=80){
-        grade= "B";
+        return "B";
     }
     else if(score>=70){
-        grade="C";
+        return"C";
     }
     else if(score>=60){
-        grade="D";
+       return "D";
     }
     else{
-        grade="F";
+        return"F";
     }
-return grade;
+
 }
 
 console.log(getGrade(80));
@@ -77,10 +77,10 @@ console.log(getGrade(50));
 
 
 function getFullName(firstName,lastName){
-    return firstName + lastName;
+    return firstName + " " +lastName;
 }
 
-console.log("Mbabazi " + "Aime");
+console.log(getFullName("Mbabazi", "Aime"));
 
 
 
@@ -100,3 +100,15 @@ function calculateShipping(weight){
 
 const finalCost= calculateShipping(8);
 console.log(finalCost);
+
+
+
+function calculateOrderTotal(price, quantity, discountPercent)
+{
+    const  intialPrice= price*quantity;
+    const discount= intialPrice* (discountPercent/100);
+    const finalPrice= intialPrice - discount;
+
+    return finalPrice;
+}
+console.log(calculateOrderTotal(5000,3,10));
